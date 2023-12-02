@@ -27,6 +27,11 @@ Once installed and activated, the widget should automatically appear on your Wor
 
 ## Changelog
 
+### 1.1
+
+- Now it shows the current status for outages
+- Uses cache to minimize the amount of requests to Loopia
+
 ### 1.0.0
 
 - Initial release.
