@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Loopia Driftblogg Widget
  * Description: Adminwidget för att visa planerade och pågående driftstörningar från Loopia Driftblogg.
- * Version: 1.1
+ * Version: 1.2
  * Author: Jamie Blomerus
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -78,7 +78,7 @@ class Loopia_Driftblogg {
 				$post_content = substr( $post_content, 0, strpos( $post_content, '<div class="wrapper" id="single-wrapper">' ) );
 
 				// Hämta flagga.
-				$flag = strpos( $post_content, 'flag-ongoing' ) ? 'flag-ongoing' : ( strpos( $post_content, 'flag-planned' ) ? 'flag-planned' : 'flag-done' );
+				$flag = strpos( $post_content, 'flag_ongoing' ) ? 'flag-ongoing' : ( strpos( $post_content, 'flag_planned' ) ? 'flag-planned' : 'flag-done' );
 				?>
 				<li>
 					<a href="<?php echo esc_attr( $post->link ); ?>" target="_blank">

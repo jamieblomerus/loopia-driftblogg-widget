@@ -27,6 +27,9 @@ Once installed and activated, the widget should automatically appear on your Wor
 
 ## Changelog
 
+### 1.2
+- Fixed a bug where the widget showed the wrong status for outages
+
 ### 1.1
 
 - Now it shows the current status for outages
